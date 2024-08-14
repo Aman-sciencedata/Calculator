@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 80%);
+  background-image: url(images/1.jpg);
+  background-blend-mode: multiply;
+}
+
+#calculator {
+  background-color: black;
+  font-family: "Lucida Sans", sans-serif;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px black;
+  max-width: 400px; /* Adjusted width */
+  overflow: hidden;
+}
+
+#display {
+  margin: 12px;
+  width: calc(100% - 24px);
+  padding: 10px;
+  font-size: 3rem; /* Adjusted font size */
+  background-color: rgb(7, 7, 7);
+  color: white;
+  text-align: right;
+  border-radius: 15px;
+}
+
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 15px; /* Adjusted padding */
+  gap: 10px; /* Adjusted gap */
+}
+
+button {
+  width: 80px; /* Adjusted width */
+  height: 80px; /* Adjusted height */
+  border-radius: 15px;
+  background-color: hsl(0, 0%, 0%);
+  color: white;
+  font-size: 2rem; /* Adjusted font size */
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid rgb(151, 148, 148); /* Added border */
+}
+
+.op {
+  background-color: orange; /* Changed to orange */
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 20%);
+}
+
+button:active {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.op:hover {
+  background-color: rgb(255, 165, 0); /* Lighter orange */
+}
+
+.op:active {
+  background-color: rgb(255, 255, 255);
+}
